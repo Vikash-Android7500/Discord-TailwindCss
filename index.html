@@ -11,6 +11,14 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./style.css">
+
+    <style>
+        .MenuBtn.active {
+          visibility: visible;
+          right: 0;
+          transition: 0.3s ease;
+        }
+    </style>
 </head>
 <body>
     
@@ -47,8 +55,19 @@
           <div class="xl:hidden block">
             <i class="fa-solid fa-bars text-[23px]"></i>
           </div>
-        </nav>
 
+
+           <!-- Responsive NavBar -->
+          <div class="MenuBtn invisible xl:hidden flex flex-col items-center gap-2 fixed right-[-100%] top-[70px] z-40 bg-blue-900 w-full p-10 rounded-md duration-300 font-ggSans font-[600]">
+            <a href="#" class="capitalize hover:underline">download</a>
+            <a href="#" class="capitalize hover:underline">nitro</a>
+            <a href="#" class="capitalize hover:underline">discover</a>
+            <a href="#" class="capitalize hover:underline">safety</a>
+            <a href="#" class="capitalize hover:underline">support</a>
+            <a href="#" class="capitalize hover:underline">blog</a>
+            <a href="#" class="capitalize hover:underline">careers</a>
+          </div>
+        </nav>
     </div>
 
     <!--hero section-->
@@ -335,6 +354,10 @@
         </div>
       </div>
 
+
+      <!-- js file -->
+      <script src="./logic.js"></script>
+      <!-- icon's -->
     <script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
 </body>
 </html>
